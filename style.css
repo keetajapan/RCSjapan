@@ -6,4 +6,314 @@
  Author: kenta.s
  Author URI:
  */
+ @media screen and (min-width: 768px) {
+   /* PC用のスタイルを指定する */
+   /* .carouselimgsp{
+     display: none !important;
+   } */
+body{
+   background-image: url(image/background.png);
+   background-repeat: repeat
+}
+
+/* Header */
+header{
+   width: 100%;
+   height: 100px;
+   z-index: 20;
+   position: relative;
+   background-color: rgb(220, 210, 196);
+}
+#logo{
+   width:70px;
+   border-radius: 50px;
+   margin: 10px 30px;
+}
+
+.carouselimg{
+   width:100%;
+}
+.navsp{
+   display:none;
+}
+.navpc{
+   position: absolute;
+   top:0px;
+   right:5px;
+   margin: 10px 10px 0 0;
+}
+
+.navcontent:hover{
+   color:black;
+}
+.navcontent{
+   color:#444;
+   opacity: 0.7;
+   margin-right: 20px;
+   font-size: 20px;
+   text-decoration: none;
+   
+}
+#menu-sp{
+   display:none;
+}
+.close{
+   display:none
+}
+
+
+/* footer */
+
+
+.access,.flex,.leftcontent,.rightcontent{
+   margin-left: 20px;
+}
+/* 固定ページmenu */
+.flex1 img{
+ width:250px
+}
+.flex1{
+ 
+   width:300px;
+   padding-bottom: 15px;
+   margin-right: 20px;
+}
+.flex1 > a{
+  color:black;
+  text-decoration: none;
+  text-align: center;
+} 
+.flexbox{
+   display: flex;
+   flex-wrap: wrap;
+   
+   margin-left: 150px;
+}
+.flexbox > p {
+   font-size: 13px;
+}
+.head1 {
+   width:100%;
+}
+.head1 img {
+   width:100%;
+}
+.pagemenu{
+   width: 100%;
+   height: 100%;;
+}
+.companylogo{
+   display: flex;
+}
+.companylogo{
+   display:flex;
+}
+.cafename > p{
+   color:rgb(0, 0, 0);
+   font-size:25px;
+   margin-top:-10px; 
+   font-style: normal;
+}
+.cafenamebase{
+   margin-top:10px
+}
+/* 
+main-content 
+*/
+.main-content {
+   text-align: center;
+   font-size: 1rem
+}
+/* 
+コピーライト */
+.cr_text{
+   background-color: #444;
+   text-align: center;
+   color: white;
+}
+
+ 
+
+#logo{
+   width:70px;
+   border-radius: 50px;
+   margin: 10px 30px;
+}
+
+.carouselimg{
+   width:100%;
+}
+.navsp{
+   display:none;
+}
+.navpc{
+   position: absolute;
+   top:0px;
+   right:5px;
+   margin: 10px 10px 0 0;
+}
+
+.navcontent:hover{
+   color:black;
+}
+.navcontent{
+   color:#444;
+   opacity: 0.7;
+   margin-right: 20px;
+   font-size: 20px;
+   text-decoration: none;
+   
+}
+#menu-sp{
+   display:none;
+}
+.close{
+   display:none
+}
+.companylogo{
+   display:flex;
+}
+.cafename{
+   color:white;
+   font-size:20px
+}
+
+/* 
+main-content 
+*/
+.main-content {
+   text-align: center;
+   font-size: 1rem
+}
+
+/* 
+各種SNS 
+*/
+
+.snslogo{ 
+   width:100%;
+   display: flex;
+   text-decoration: none;
+   justify-content: space-around;
+}   
+.snslogo > a{
+   text-decoration: none;
+   margin-right:15px;
+   font-size:18px;
+   color:black;
+   opacity:0.7;
+   border-radius: 135px;
+   overflow: hidden;
+}
+.snslogo > a :hover{
+   color:black;
+   opacity:1
+}
+
+
+
+   /* footer */
+
+footer{
+   background-color: rgb(220, 210, 196);
+   display: flex;
+   position: relative;
+   justify-content: center;
+}
+
+.title1,.title2,.title3{
+   text-align: center;
+   background-color: aliceblue;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 5px 5px 1px #777575;
+}
+.contact,.access,.map{
+   margin-right: 50px;
+}
+
+/* 
+コピーライト */
+.cr_text{
+   font-size: 0.8rem;
+   width: 100%;
+   background-color: #444;
+   text-align: center;
+   color: white;
+}
+
+/* 固定ページmenu */
+
+/* 固定ページmenu */
+.flex1 img{
+   width:250px
+  }
+  .flex1{
+   
+     width:300px;
+     padding-bottom: 15px;
+     margin-right: 20px;
+  }
+  .flex1 > a{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+  } 
+  .flexbox{
+     display: flex;
+     flex-wrap: wrap;
+     
+     margin-left: 150px;
+  }
+  .flexbox > p {
+     font-size: 13px;
+  }
+  .head1 {
+     width:100%;
+  }
+  .head1 img {
+     width:100%;
+  }
+  .pagemenu{
+     width: 100%;
+     height: 100%;;
+  }
+  .container2 {
+   max-width: 1100px;
+   height: 700px;
+   margin: 10px auto;
+   padding: 20px 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   text-align: center;
+   background-color:rgb(236, 234, 234);
+   opacity: 0.7;
+ }
+ #name{
+   width:600px
+ }
+ #email{
+   width:600px
+ }
+ .mod7{
+   font-size:17px
+ }
+ form label {
+   display: block;
+   margin-bottom: 5px;
+}
+#message{
+   width: 600px;
+   height: 300px;
+}
+}
+
+
+
+
+
+
+
+
+
 
