@@ -38,21 +38,13 @@ header{
 }
 .navpc{
    position: absolute;
-   top:0px;
-   right:5px;
-   margin: 10px 10px 0 0;
+   top:5px;
+   right:10px;
+   margin: 10px 20px 0 0;
 }
 
 .navcontent:hover{
    color:black;
-}
-.navcontent{
-   color:#444;
-   opacity: 0.7;
-   margin-right: 20px;
-   font-size: 20px;
-   text-decoration: none;
-   
 }
 #menu-sp{
    display:none;
@@ -117,13 +109,7 @@ header{
 .cafenamebase{
    margin-top:10px
 }
-/* 
-main-content 
-*/
-.main-content {
-   text-align: center;
-   font-size: 1rem
-}
+
 /* 
 コピーライト */
 .cr_text{
@@ -146,21 +132,15 @@ main-content
 .navsp{
    display:none;
 }
-.navpc{
-   position: absolute;
-   top:0px;
-   right:5px;
-   margin: 10px 10px 0 0;
-}
 
 .navcontent:hover{
    color:black;
 }
 .navcontent{
    color:#444;
-   opacity: 0.7;
+   opacity: 0.6;
    margin-right: 20px;
-   font-size: 20px;
+   font-size: 22px;
    text-decoration: none;
    
 }
@@ -183,9 +163,68 @@ main-content
 */
 .main-content {
    text-align: center;
-   font-size: 1rem
+   font-size: 1rem;
+   display: flex;
+   position: relative;
+   height: 500px;
+   margin-top: 80px;
 }
-
+.right{
+   position: absolute;
+   right: 5px;
+   opacity:0.7;
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+    -webkit-mask-image: radial-gradient(rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0) 70%);
+    mask-image: radial-gradient(rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0) 0%);
+}
+.right img{
+   margin: 10px;
+   object-fit: cover;
+   width: 600px;
+   height: auto;
+}
+.right::after {
+   position: absolute;
+   content: '';
+   top: 0;
+   right: 6px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   box-shadow: inset 0 0 15px 15px gray;
+ }
+ .leftphoto{
+   position: absolute;
+   left: 15px;
+   bottom:-60px;
+   opacity:0.7;
+    width: 500px;
+    height: 550px;
+    border-radius: 50%;
+    -webkit-mask-image: radial-gradient(rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0) 70%);
+    mask-image: radial-gradient(rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0) 0%);
+ }
+ .leftphoto img{
+   margin-top: 0px;
+   object-fit: cover;
+   width: 600px;
+   height: auto;
+}
+.left{
+   margin-left: 100px;
+}
+.leftcontent2{
+   margin-left:230px ;
+   z-index: 22;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.explain{
+   font-weight: bold;
+   z-index: 60;
+   font-family: "メイリオ" ;
+}
 /* 
 各種SNS 
 */
