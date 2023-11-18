@@ -28,6 +28,7 @@
      
     </div> 
     <div class="navpc">
+    <a class="navcontent"href="<?php echo home_url(); ?>/#concept">コンセプト</a>
     <a class="navcontent"href="<?php echo home_url(); ?>/menu">メニュー</a>
     <a class="navcontent"href="<?php echo home_url(); ?>/ivent">イベント</a>
     <a class="navcontent"href="<?php echo home_url(); ?>/ac">アクセス</a>
