@@ -1,45 +1,55 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
- <meta charset="UTF-8">
- <meta name= description content= "○○市のはヘアカット、カラーはお任せください！経験豊富なスタイリスト○○人在籍で貴方の理想をカタチに。">
- <title>美容院フォーマット</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP:wght@100;200;400&display=swap" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/bootstrap4/bootstrap.min.css" />
- <link href="<?php echo get_template_directory_uri(); ?>/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/main_styles.css" />
-<?php wp_head(); ?>
-</head>
-<body>
-<header>  
-  <div class="companylogo">
-    <a href="<?php echo home_url(); ?>/top">
-    <img src="<?php echo get_template_directory_uri(); ?>/image/RCFuu.png" id="logo">
-    </a>
-  </div>
-  <div class="navpc">
-   <a class="navcontent"href="<?php echo home_url(); ?>/salon">サロン</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/hairmake">ヘアメイク</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/menu">メニュー</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/reserve">予約</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/staffs">スタッフ紹介</a>
-   <a class="navcontent"  href="<?php echo home_url(); ?>/about">会社概要</a>
-  </div> 
-  <!-- スマホ用 -->
-  <img id="menu-sp" src="<?php echo get_template_directory_uri(); ?>image/bars_24.png" alt="ナビゲーションを開く" >
-  <a class="close"><img src="<?php echo get_template_directory_uri(); ?>/button-close.png" class="closebutton"></a>
-  <div class="navsp">
-   <a class="navcontent"href="<?php echo home_url(); ?>/salon">サロン</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/hairmake">ヘアメイク</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/menu">メニュー</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/reserve">予約</a>
-   <a class="navcontent"href="<?php echo home_url(); ?>/staffs">スタッフ紹介</a>
-   <a class="navcontent"  href="<?php echo home_url(); ?>/about">会社概要</a>
-  </div> 
-  
+<?php get_header();?>
+
+<body>  
+<main>
+  <section id="movecontent">
+    <div class="carousel">
+    <div><a href=""><img id="carousel1" class="carouselimg" src="<?php echo get_template_directory_uri(); ?>/image/damy.png" ></a></div>
+    <div><a href=""><img id="carousel2" class="carouselimg" src="<?php echo get_template_directory_uri(); ?>/image/damy.png" ></a></div>
+    <div><a href=""><img id="carousel3" class="carouselimg" src="<?php echo get_template_directory_uri(); ?>/image/damy.png" ></a></div>
+    </div>
+  </section>
+
+    <div class="companylogo">
+      <a href="index.html">
+        <!--header-->
+        <img src="<?php echo get_template_directory_uri(); ?>/logo1.png" id="logosp">
+      </a>
+
+    </div> 
+      <div class="footer_social">
+      <span>SNSはこちらからチェック!</span>
+        <a href="https://twitter.com"><img src="<?php echo get_template_directory_uri(); ?>/button-twitter.png" class="sns"></a>
+        <a href="https://www.facebook.com"><img src="<?php echo get_template_directory_uri(); ?>/button-facebook.png" class="sns"></a>   
+      </div>
+      <div class="footer-nav">
+        <a class="navcontent"href="<?php echo home_url(); ?>/salon">メニュー</a>
+        <a class="navcontent"href="<?php echo home_url(); ?>/hairmake">イベント</a>
+        <a class="navcontent"href="<?php echo home_url(); ?>/menu">アクセス</a>
+        <a class="navcontent"href="<?php echo home_url(); ?>/reserve">予約</a>
+      </div>
+    
+
+    <!-- main-content -->
+    <div class="main-content">
+         <br>
+      <h1>「ささやかな一杯で、幸せな一生に」</h1>
+        <br>
+        <p>「仲間と共に多くの人に幸せを届けて、仲間と共に幸せになれたらいいな」</p>
+        <p>そんな思いを詰め込んだ場所を作りました。</p>
+        <p>ささやかな一杯で幸せをお届けします。</p>
+    </div> 
+  <br>
+  <br>
+
+    <h3 class="section-headline">各種SNSはこちら</h3>
+    <div class="sns">
+      <a href="https://www.instagram.com/"></a>
+      <a href="https://twitter.com/"></a>
+    </div>
+    <div class="snslogo">
+      <a href="https://www.instagram.com/"><img src="<?php echo get_template_directory_uri(); ?>/image/instagram.jpeg" alt="instagram"></a>
+      <a href="https://twitter.com/"><img src="<?php echo get_template_directory_uri(); ?>/image/x.jpeg" alt="x(twitter)"></a>
+    </div>
+
+    <?php get_footer();?>
